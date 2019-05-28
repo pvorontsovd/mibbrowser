@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  mibbrowser:
+    image: pvorontsov/mibbrowser
+    container_name: mibbrowser
+    environment:
+      - DISPLAY
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./mibs:/home/mib/mibs
